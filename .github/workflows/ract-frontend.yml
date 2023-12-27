@@ -1,0 +1,14 @@
+name: test-frontend
+on: push
+jobs:
+    runs-on: ubuntu-20.04
+    steps:
+        -   name: Checkout
+            uses: actions/checkout@v4.1.1
+        -   name: Install node js
+            uses: actions/setup-node@4
+            with:
+                node-version: 21
+        -   name: Install dependencies
+            run : npm ci
+            run : npm test
