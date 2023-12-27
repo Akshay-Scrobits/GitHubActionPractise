@@ -15,6 +15,7 @@ jobs:
             -   name: Run test
                 run : npm test
     deploy:
+        needs: front-end-test
         runs-on: ubuntu-20.04
         steps:
             - name: Get code
