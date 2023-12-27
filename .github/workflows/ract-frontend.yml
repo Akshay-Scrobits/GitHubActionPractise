@@ -1,9 +1,9 @@
 name: test-frontend
 on: push
 jobs:
-    runs-on: ubuntu
+    runs-on: ubuntu-latest
     steps:
-        - name: Checkout
+        - name: Get code
           uses: actions/checkout@v4.1.1
         - name: Install node js
           uses: actions/setup-node@4
