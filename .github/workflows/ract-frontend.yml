@@ -1,7 +1,7 @@
 name: test-frontend
 on: push
 jobs:
-    runs-on: ubuntu-lastest
+    runs-on: ubuntu
     steps:
         - name: Checkout
           uses: actions/checkout@v4.1.1
